@@ -1,0 +1,68 @@
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+
+  background-color: white;
+  color: black;
+  font-size: 0.65rem;
+}
+.start-game {
+  display: block;
+  width: auto;
+  margin: 1rem auto;
+  font-size: 3rem;
+}
+.start-game:hover {
+  cursor: help;
+}
+p {
+  margin: 0;
+}
+.winner {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem auto;
+}
+.turn {
+  text-align: center;
+  font-size: 3rem;
+}
+/* .x-turn {
+}
+.o-turn {
+} */
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: blue;
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto;
+}
+.cell {
+  background-color: green;
+  border: red solid 0.2rem;
+  padding: 2rem;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+.cell:hover {
+  cursor: pointer;
+}
+.reserved {
+  background-color: gray;
+}
+
+.reserved:hover {
+  cursor: not-allowed;
+}
